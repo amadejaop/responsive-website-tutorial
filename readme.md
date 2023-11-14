@@ -1,5 +1,8 @@
 # Responsive website tutorial
-Available on [YouTube](https://www.youtube.com/watch?v=p0bGHP-PXD4).
+
+[Live preview](https://amadejaop.github.io/responsive-website-tutorial/index.html)
+
+Tutorial available on [YouTube](https://www.youtube.com/watch?v=p0bGHP-PXD4).
 
 ## What I learned
 - useful VSC shortcuts for copying lines down, inserting lines, selecting and changing multiple of the same words,...
