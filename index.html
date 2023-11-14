@@ -17,7 +17,7 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="features.html">Features</a></li>
-                    <li><a href="documetation.html">Documetation</a></li>
+                    <li><a href="documentation.html">Documentation</a></li>
                 </ul>
             </nav>
         </div>
@@ -33,7 +33,11 @@
             </div>
             <div class="showcase-form card">
                 <h2>Request a Demo</h2>
-                <form>
+                <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact">
+                    <p class="hidden">
+                        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                    </p>
                     <div class="form-control">
                         <input type="text" name="name" placeholder="Name" required>
                     </div>
@@ -52,7 +56,7 @@
     <!-- Stats -->
     <section class="stats">
         <div class="container">
-            <h3 id="stats-header" class="stats-heading text-center my-1">
+            <h3 class="stats-heading text-center my-1">
                 Welcome to the best platform for building applications of all types with modern architecture and scaling
             </h3>
             
