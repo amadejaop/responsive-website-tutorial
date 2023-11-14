@@ -2,6 +2,9 @@
 
 :root {
     --primary-color: #047aed;
+    --secondary-color: #1c3fa8;
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
 }
 
 * {
@@ -37,6 +40,68 @@ p {
 
 ul {
     list-style-type: none;
+}
+
+.cli .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.cli .grid > *:first-child {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.cloud .grid {
+    grid-template-columns: 4fr 3fr;
+}
+
+.features-head img, .docs-head img {
+    justify-self: flex-end;
+    width: 200px;
+}
+
+.features-main .card > i {
+    margin-right: 20px;
+}
+
+.features-main .grid {
+    padding: 30px;
+}
+
+.features-main .grid > *:first-child {
+    grid-column: span 3;
+}
+
+.features-main .grid > *:nth-child(2) {
+    grid-column: span 2;
+}
+
+.features-sub-head img {
+    justify-self: flex-end;
+    width: 300px;
+}
+
+.footer .social a {
+    margin: 0 10px;
+}
+
+.languages .card {
+    margin: 18px 10px 40px;
+    text-align: center;
+    transition: transform 0.2s ease-in;
+}
+.languages .card:hover {
+    transform: translateY(-15px);
+}
+
+.languages .card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.languages .flex {
+    flex-wrap: wrap;
 }
 
 .navbar {
@@ -126,4 +191,69 @@ ul {
 
 .stats {
     padding-top: 100px;
+}
+
+.stats-heading {
+    margin: auto;
+    max-width: 500px;
+}
+
+.stats .grid h3 {
+    font-size: 35px;
+}
+
+.stats .grid p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#stats-header {
+    margin: auto;
+}
+
+/* Tablets and under */
+@media (max-width:768px) {
+    .grid,
+    .showcase .grid,
+    .stats .grid,
+    .cli .grid,
+    .cloud .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .cli .grid > *:first-child {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .showcase {
+        height: auto;
+    }
+
+    .showcase-text {
+        text-align: center;
+        margin-top: 40px;
+    }
+    
+    .showcase-form {
+        justify-self: center;
+        margin: auto;
+    }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+    .navbar {
+        height: 110px;
+    }
+
+    .navbar .flex {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        background-color: rgba(0, 0, 0, 0.1);
+        padding: 10px;
+    }
 }
