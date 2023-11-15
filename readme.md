@@ -11,3 +11,6 @@ Tutorial available on [YouTube](https://www.youtube.com/watch?v=p0bGHP-PXD4).
 - combine CSS grid and flexbox to easily create layouts
 - define variables with double dashes in :root and reuse them throughout CSS using var();
 - creating and using utility classes
+- write and organize CSS with care, as a newly/later inserted class may overwrite the properties of a previous one if an element has both
+- take care in writing HTML, as it has to be semantically correct; its purpose is labeling, not designing content
+- outline: 0; and outline: none; should not be used because it makes websites inaccessible to visually impared users (use https://wave.webaim.org/ to test websites); SOLUTION: provide alternative styling to focused links (background color, text color, outline)
